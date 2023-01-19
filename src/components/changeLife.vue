@@ -9,7 +9,7 @@ export default{
 
 <template>
     <div class="row  d-flex justify-content-center align-items-center">
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-light text-center box">
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-10 text-light text-center box">
             <h1>
                 CHANGE A LIFE TODAY
             </h1>

@@ -4,6 +4,7 @@ import ourValues from './ourValues.vue';
 import recentCauses from './recentCauses.vue';
 import changeLife from './changeLife.vue'
 import latestArticle from './latestArticle.vue'
+
 export default{
   name: 'AppMain',
   components:{
