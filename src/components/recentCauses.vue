@@ -33,7 +33,7 @@ export default{
         
     </div>
     <div class="container-fluid">
-        <div class="row bg-danger">
+        <div class="row bg">
             <div class="col text-center text-light p-4">
                 <h5>VIEW ALL OUR CAUSES</h5>
             </div>
@@ -44,6 +44,10 @@ export default{
 <style lang="scss" scoped>
 @use '../styles/general.scss' as * ;
 @use '../styles/partials/variables' as * ;
+
+.bg{
+    background-color: $color-view ;
+}
 .line{
     border-bottom: solid 2px $link-color;
     width: 150px;
