@@ -1,0 +1,80 @@
+<script>
+export default{
+  name: 'ourValues',
+  components:{
+    
+
+  }
+}
+</script>
+
+<template>
+    <div class="container">
+        <div class="row  d-flex align-items-center justify-content-center ">
+            <div class="col-lg-12 text-light text-center mt-5 mb-5">
+                <h1>OUR VALUES</h1>
+                <div class="line text-center mb-2 mt-2"></div>
+                <p>Think Big Act Bigger</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center text-light  ">
+            <div class="col-lg-3  col-sm-10 text-center mb-5">
+                <i class="fa-solid fa-droplet"></i>
+                <h5>Clean Water</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, dolores.</p>
+                <button class="bottone  btn-secondary ">
+                    LERAN MORE
+                </button>
+            </div>
+            <div class="col-lg-3  col-sm-10  text-center">
+                <i class="fa-sharp fa-solid fa-stethoscope"></i>
+                <h5>Vaccinations</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore!</p>
+                <button class="bottone  btn-secondary ">
+                    LEARN MORE
+                </button>
+            </div>
+            <div class="col-lg-3  col-sm-10  text-center">
+                <i class="fa-solid fa-graduation-cap "></i>
+                <h5>Education</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, saepe.</p>
+                <button class="bottone  btn-secondary ">
+                    LEARN MORE
+                </button>
+            </div>
+            <div class="col-lg-3  col-sm-10  text-center">
+                <i class="fa-solid fa-wheat-awn"></i>
+                <h5>Farming</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, fugit.</p>
+                <button class="bottone  btn-secondary ">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+@use '../styles/general.scss' as * ;
+@use '../styles/partials/variables' as * ;
+
+
+.line{
+    border-bottom: solid 2px $link-color;
+    width: 150px;
+    margin: auto;
+}
+
+i{
+    font-size: 50px;
+    color:$link-color;
+}
+button,
+.bottone{
+    background-color: $link-color;
+    color: $main-color;
+    padding: .2rem 1.5rem;
+    border: none;
+    margin-top: 2rem;
+}
+</style>

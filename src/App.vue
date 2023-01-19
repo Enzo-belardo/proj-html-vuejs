@@ -27,7 +27,7 @@ export default{
   </footer>
 </template>
 
-<style lang="scss" >
+<style lang="scss">
 @use './styles/general' as * ;
 @use './styles/partials/variables' as * ;
 @use "bootstrap/scss/bootstrap" as * ;

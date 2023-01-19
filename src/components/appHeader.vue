@@ -1,17 +1,23 @@
 <script>
 import jumboText from './jumboText.vue';
+import { store } from '../store'
 
 export default{
   name: 'AppHeader',
   components:{
-    jumboText,
-    
+    jumboText, 
+  },
+  data(){
+    return{
+        store,
+    }
   }
+
 }
 </script>
 
 <template>
-    <div class="bg ">
+    <div class="bg">
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex justify-content-between">
               <div class="logo">
@@ -23,10 +29,7 @@ export default{
                     </button>
                     <div class="collapse navbar-collapse flex-grow-0 " id="navbarScroll">
                         <div class="navbar-nav text-light">
-                          <a class="nav-link text-light">HOME</a>
-                          <a class="nav-link text-light">MISSION</a>
-                          <a class="nav-link text-light">CAUSES</a>
-                          <a class="nav-link text-light">JOURNAL</a>
+                          <a class="nav-link text-light" v-for="element in store.links" :class="{ 'active': element.active }"> {{ element.link }}</a>
                         </div>
                     </div>
                     <div class="d-none d-lg-block">
@@ -61,10 +64,16 @@ button,
     color: $main-color;
     padding: .5rem 1rem;
     margin-left: 2rem;
+    border: none;
 }
 
 a{
    margin-left: 2rem;
+   cursor: pointer;
+   &.active,
+    &:hover{
+        color: $link-color;
+    }
 }
 
 
