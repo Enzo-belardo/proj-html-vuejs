@@ -18,34 +18,34 @@ export default{
             </div>
         </div>
         <div class="row d-flex justify-content-center text-light  ">
-            <div class="col-lg-3  col-sm-10 text-center mb-5">
-                <i class="fa-solid fa-droplet"></i>
+            <div class="col-lg-3  col-sm-10 text-center mb-5 ">
+                <i class="fa-solid fa-droplet mb-1"></i>
                 <h5>Clean Water</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, dolores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <button class="bottone  btn-secondary ">
                     LERAN MORE
                 </button>
             </div>
-            <div class="col-lg-3  col-sm-10  text-center">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
+            <div class="col-lg-3  col-sm-10 mb-sm-2 text-center mb-5">
+                <i class="fa-sharp fa-solid fa-stethoscope mb-1"></i>
                 <h5>Vaccinations</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="bottone  btn-secondary ">
                     LEARN MORE
                 </button>
             </div>
-            <div class="col-lg-3  col-sm-10  text-center">
-                <i class="fa-solid fa-graduation-cap "></i>
+            <div class="col-lg-3  col-sm-10  mb-sm-2 text-center mb-5">
+                <i class="fa-solid fa-graduation-cap mb-1"></i>
                 <h5>Education</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, saepe.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
                 <button class="bottone  btn-secondary ">
                     LEARN MORE
                 </button>
             </div>
-            <div class="col-lg-3  col-sm-10  text-center">
-                <i class="fa-solid fa-wheat-awn"></i>
+            <div class="col-lg-3  col-sm-10 mb-sm-2 text-center mb-5">
+                <i class="fa-solid fa-wheat-awn mb-1"></i>
                 <h5>Farming</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, fugit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
                 <button class="bottone  btn-secondary ">
                     LEARN MORE
                 </button>
@@ -58,7 +58,9 @@ export default{
 @use '../styles/general.scss' as * ;
 @use '../styles/partials/variables' as * ;
 
-
+h5{
+    margin-bottom: 1rem;
+}
 .line{
     border-bottom: solid 2px $link-color;
     width: 150px;

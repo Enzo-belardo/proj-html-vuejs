@@ -9,8 +9,8 @@ export default{
 
 <template>
     <div class="row  d-flex ms-0 w-100">
-        <div class="col-lg-8 col-md-12 d-none d-sm-flex  bg-light d-flex justify-content-center align-items-center">
-            <div class="col-11 article">
+        <div class="col-lg-8 col-md-12  d-sm-flex  bg-light d-flex justify-content-center align-items-center">
+            <div class="col-10 m-4 article">
                 <h1 class="mb-3">EVERY MOMENT COUNTS</h1>
                 <div class="line mb-3"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel non, natus magnam reprehenderit libero officia totam ipsa ad repellendus facilis autem </p>
