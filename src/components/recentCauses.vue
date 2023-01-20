@@ -24,8 +24,8 @@ export default{
                 <p>We run project in over 30 countries in 5 continents</p>
             </div>
         </div>
-        <div  class="row g-3 d-flex justify-content-center text-light ">
-            <div v-for="element in store.imageCauses" class="col-lg-3  col-sm-12 text-center mb-5 ">
+        <div  class="row  d-flex justify-content-center text-light ">
+            <div v-for="element in store.imageCauses" class="col-lg-3 col-md-6  col-sm-10 text-center mb-5 ">
                 <img :src="getImagePath(element.image)" class="img-fluid w-100" alt="">
             </div>
         </div>

@@ -27,10 +27,10 @@ export default{
                 <p>Together we make all the difference</p>
             </div>
         </div>
-        <div class="row  d-flex justfy-content-center mb-5">
-            <div class="col-lg-6 flex-xs-wrap">
-                <img src="../assets/images/photo-1444213007800-cff19e1677ac-600x450.jpg" alt="" class="img-fluid">
-                <div class="mt-5 ps-3  description">
+        <div class="row  d-flex justfy-content-center ">
+            <div class="col-lg-6 ">
+                <img src="../assets/images/photo-1444213007800-cff19e1677ac-600x450.jpg" alt="" class="img-fluid mb-4">
+                <div class="mt-5 mb-5 ps-3  description">
                     <h5 class="mb-2">Understanding community complexities</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
                 </div>
@@ -45,7 +45,7 @@ export default{
                 </div>
             </div>
         </div>
-        <div class="col bg text-center text-light p-2 ">
+        <div class="col bg text-center text-light p-3 ">
             <h4>
                 VIEW ALL OUR ARTICLES
             </h4>

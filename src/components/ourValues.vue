@@ -19,7 +19,7 @@ export default{
             </div>
         </div>
         <div class="row  d-flex justify-content-center text-light  ">
-            <div class="col-lg-3  col-sm-10 text-center mb-5 ">
+            <div class="col-lg-3 col-md-6 col-sm-10 text-center mb-5 ">
                 <i class="fa-solid fa-droplet mb-1"></i>
                 <h5>Clean Water</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -27,7 +27,7 @@ export default{
                     LERAN MORE
                 </button>
             </div>
-            <div class="col-lg-3  col-sm-10  text-center mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-10  text-center mb-5">
                 <i class="fa-sharp fa-solid fa-stethoscope mb-1"></i>
                 <h5>Vaccinations</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -35,7 +35,7 @@ export default{
                     LEARN MORE
                 </button>
             </div>
-            <div class="col-lg-3 col-sm-10   text-center mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-10  text-center mb-5">
                 <i class="fa-solid fa-graduation-cap mb-1"></i>
                 <h5>Education</h5>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem, </p>
@@ -43,7 +43,7 @@ export default{
                     LEARN MORE
                 </button>
             </div>
-            <div class="col-lg-3 col-sm-10  text-center mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-10  text-center mb-5">
                 <i class="fa-solid fa-wheat-awn mb-1"></i>
                 <h5>Farming</h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
