@@ -31,7 +31,7 @@ export default{
                 <i class="fa-sharp fa-solid fa-stethoscope mb-1"></i>
                 <h5>Vaccinations</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="  btn-secondary ">
+                <button class=" btn-secondary ">
                     LEARN MORE
                 </button>
             </div>
@@ -76,7 +76,7 @@ i{
 button{
     background-color: $link-color;
     color: $main-color;
-    padding: .2rem 1.5rem;
+    padding: .4rem 1.5rem;
     border: none;
     margin-top: 2rem;
 }
