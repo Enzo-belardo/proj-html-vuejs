@@ -29,7 +29,6 @@ export default{
                 <img :src="getImagePath(element.image)" class="img-fluid w-100" alt="">
             </div>
         </div>
-        
     </div>
     <div class="container-fluid">
         <div class="row bg">
