@@ -27,17 +27,17 @@ export default{
                 <p>Together we make all the difference</p>
             </div>
         </div>
-        <div class="row g-4 d-flex justfy-content-center mb-5">
+        <div class="row  d-flex justfy-content-center mb-5">
             <div class="col-lg-6 flex-xs-wrap">
                 <img src="../assets/images/photo-1444213007800-cff19e1677ac-600x450.jpg" alt="" class="img-fluid">
-                <div class="mt-4 description">
-                    <h5>Understanding community complexities</h5>
+                <div class="mt-5 ps-3  description">
+                    <h5 class="mb-2">Understanding community complexities</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div  v-for="element in store.articleLatest" class="d-flex mb-4">
-                    <img :src="getImagePath(element.image)" class="w-25">
+                <div  v-for="element in store.articleLatest" class="d-flex mb-5">
+                    <img :src="getImagePath(element.image)" class="img-fluid w-25">
                     <div class="ms-2 description">
                         <h5>{{ element.title }}</h5>
                         <p>{{ element.article }}</p>
@@ -66,6 +66,7 @@ export default{
     margin: auto;
 }
 .description{
+    width: 90%;
     line-height: 2rem;
     h5{
         color: $link-color ;

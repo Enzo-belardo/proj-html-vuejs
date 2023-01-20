@@ -10,7 +10,7 @@ export default{
 </script>
 
 <template>
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row  d-flex align-items-center justify-content-center ">
             <div class="col-lg-12  text-light text-center mt-5 mb-5">
                 <h1>OUR VALUES</h1>
