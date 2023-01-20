@@ -1,9 +1,20 @@
 <script>
+import { store } from '../store';
 export default{
   name: 'latestArticle',
   components:{
     
-  }
+  },
+  data(){
+      return {
+         store,
+       }
+   },
+   methods:{
+    getImagePath: function (img){
+        return new URL(`../assets/images/${img}.jpg`, import.meta.url).href;
+    },
+   }
 }
 </script>
 
@@ -25,32 +36,11 @@ export default{
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="d-flex mb-4">
-                    <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="" class="w-25">
+                <div  v-for="element in store.articleLatest" class="d-flex mb-4">
+                    <img :src="getImagePath(element.image)" class="w-25">
                     <div class="ms-2 description">
-                        <h5>Understanding community complexities</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
-                    </div>
-                </div>
-                <div class="d-flex mb-4">
-                    <img src="../assets/images/photo-1447430617419-95715602278e-177x142.jpg" alt=""  class="w-25">
-                    <div class="ms-2 description">
-                        <h5>Understanding community complexities</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
-                    </div>
-                </div>
-                <div class="d-flex  mb-4">
-                    <img src="../assets/images/photo-1460230525622-630fe3294cd7-177x142.jpg" alt=""  class="w-25">
-                    <div class="ms-2 description">
-                        <h5>Understanding community complexities</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
-                    </div>
-                </div>
-                <div class="d-flex  mb-4">
-                    <img src="../assets/images/photo-1460600421604-5e138c208b9c-177x142.jpg" alt=""  class="w-25">
-                    <div class="ms-2 description">
-                        <h5>Understanding community complexities</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ducimus vitae eos perspiciatis?</p>
+                        <h5>{{ element.title }}</h5>
+                        <p>{{ element.article }}</p>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,17 @@
 <script>
+import { store } from '../store';
 export default{
   name: 'recentCauses',
-  components:{
-    
-  }
+    data(){
+      return {
+         store,
+       }
+   },
+   methods:{
+    getImagePath: function (img){
+        return new URL(`../assets/images/${img}.jpg`, import.meta.url).href;
+    },
+   }
 }
 </script>
 
@@ -16,18 +24,9 @@ export default{
                 <p>We run project in over 30 countries in 5 continents</p>
             </div>
         </div>
-        <div class="row g-3 d-flex justify-content-center text-light ">
-            <div class="col-lg-3  col-sm-12 text-center mb-5 ">
-                <img src="../assets/images/avada-charity-fair-trade-featured-400x300.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-lg-3  col-sm-12 mb-sm-2 text-center mb-5">
-                <img src="../assets/images/avada-charity-shelter-featured-400x300.jpg" class="img-fluid w-100" alt="">     
-            </div>
-            <div class="col-lg-3  col-sm-12  mb-sm-2 text-center mb-5">
-                <img src="../assets/images/avada-charity-farming-featured-400x300.jpg" class="img-fluid w-100" alt="">                   
-            </div>
-            <div class="col-lg-3  col-sm-12 mb-sm-2 text-center mb-5">
-                <img src="../assets/images/avada-charity-vaccines-featured-400x300.jpg" class="img-fluid w-100" alt="">
+        <div  class="row g-3 d-flex justify-content-center text-light ">
+            <div v-for="element in store.imageCauses" class="col-lg-3  col-sm-12 text-center mb-5 ">
+                <img :src="getImagePath(element.image)" class="img-fluid w-100" alt="">
             </div>
         </div>
         
