@@ -27,9 +27,9 @@ export default{
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse flex-grow-0 " id="navbarScroll">
+                    <div class="collapse navbar-collapse " id="navbarScroll">
                         <div class="navbar-nav text-light">
-                          <a class="nav-link text-light" v-for="element in store.links" :class="{ 'active': element.active }"> {{ element.link }}</a>
+                          <a v-for="element in store.links" :class="{ 'active': element.active }"> {{ element.link }}</a>
                         </div>
                     </div>
                     <div class="d-none d-lg-block">
@@ -70,6 +70,8 @@ button,
 a{
    margin-left: 2rem;
    cursor: pointer;
+   text-decoration: none;
+   color: $main-color;
    &.active,
     &:hover{
         color: $link-color;

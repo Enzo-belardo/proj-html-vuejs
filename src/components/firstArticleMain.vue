@@ -12,13 +12,13 @@ export default{
         <div class="col-lg-8 col-md-12  d-sm-flex  bg-light d-flex justify-content-center align-items-center">
             <div class="col-10 m-4 article">
                 <h1 class="mb-3">EVERY MOMENT COUNTS</h1>
-                <div class="line mb-3"></div>
+                <div class="line mb-4 mb-3"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel non, natus magnam reprehenderit libero officia totam ipsa ad repellendus facilis autem </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, necessitatibus veritatis totam molestiae laborum nostrum incidunt esse aliquam. Beatae, magnam ad? Repellat ratione ex ducimus.</p>
                 <p class="mb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis qui quibusdam dolorem sint
                 </p>
-                <button class="bottone  btn-secondary ">
+                <button class="btn-secondary ">
                     OUR MISSION
                 </button>
             </div>
@@ -46,21 +46,25 @@ export default{
 <style lang="scss" scoped>
 @use '../styles/general.scss' as * ;
 @use '../styles/partials/variables' as * ;
+.bg-home{
+    background-image: url(../assets/images/home-content-bg-1.jpg);
+    background-size: cover;
+    height: 400px;
+    span{
+        font-size: 3rem;
+        margin-left: .5rem;
+    }
+    i{
+        font-size: 2rem;
+    }
+}
 
-span{
-    font-size: 3rem;
-    margin-left: .5rem;
-}
-i{
-    font-size: 2rem;
-}
 .line{
     border-bottom: solid 2px $link-color;
     width: 200px;
 
 }
-button,
-.bottone{
+button{
     background-color: $link-color;
     color: $main-color;
     padding: .2rem 1.5rem;
@@ -71,9 +75,4 @@ button,
     line-height: 2rem;
 }
 
-.bg-home{
-    background-image: url(../assets/images/home-content-bg-1.jpg);
-    background-size: cover;
-    height: 400px;
-}
 </style>

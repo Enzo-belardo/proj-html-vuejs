@@ -12,7 +12,7 @@ export default{
         <div class="row d-flex align-items-center justify-content-center ">
             <div class="col-lg-12  text-center mt-5 mb-5">
                 <h1>LATEST ARTICLES</h1>
-                <div class="line text-center mb-2 mt-2"></div>
+                <div class="line text-center mb-4 mt-3"></div>
                 <p>Together we make all the difference</p>
             </div>
         </div>
@@ -77,10 +77,12 @@ export default{
 }
 .description{
     line-height: 2rem;
+    h5{
+        color: $link-color ;
+    }
 }
 
-h1,
-h5{
-    color: $link-color ;
+h1{
+    color: $link-color
 }
 </style>

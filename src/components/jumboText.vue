@@ -14,9 +14,9 @@ export default{
             <h1>
                 MAKE A DIFFERENCE
             </h1>
-            <p>as long as poverty, injustice & inequality persist, none of us can truly rest</p>
+            <p class="mb-2 mb-1">as long as poverty, injustice & inequality persist, none of us can truly rest</p>
             <div>
-                <button class="white">CUR MISSION</button>
+                <button class="white">OUR MISSION</button>
                 <button class="yellow">DONATE NOW</button>
             </div>
         </div>

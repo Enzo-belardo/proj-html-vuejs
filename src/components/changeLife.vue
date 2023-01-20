@@ -16,8 +16,8 @@ export default{
             <div class="line mb-4 mt-3"></div>
             <p>as long as poverty, injustice & inequality persist, none of us can truly rest. it doesn't take much to change a life, Get in touch today and start making the difference.</p>
             <div class="mt-3">
-                <button class="white">CUR MISSION</button>
-                <button class="white">DONATE NOW</button>
+                <button>VOLUNTEER</button>
+                <button>DONATE NOW</button>
             </div>
         </div>
     </div>
@@ -40,9 +40,8 @@ button{
     padding: .3rem 1rem;
     margin: 1rem;
     background-color: transparent;
-}
-.white{
     border-color: $main-color;
     color: $main-color;
 }
+
 </style>

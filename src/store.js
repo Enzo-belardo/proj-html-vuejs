@@ -4,11 +4,11 @@ export const store = reactive ({
     links:[
         {
             link: 'HOME',
-            active: false,
+            active: true,
         },
         {
             link: 'MISSION',
-            active: true,
+            active: false,
         },
         {
             link: 'CAUSES',
