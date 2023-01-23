@@ -17,7 +17,7 @@ export default{
 </script>
 
 <template>
-    <div class="bg">
+    <div class="bg" id="uno">
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex justify-content-between">
               <div class="logo">

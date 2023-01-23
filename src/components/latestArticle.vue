@@ -28,7 +28,7 @@ export default{
             </div>
         </div>
         <div class="row  d-flex justfy-content-center ">
-            <div class="col-lg-6 ">
+            <div class="col-lg-6">
                 <img src="../assets/images/photo-1444213007800-cff19e1677ac-600x450.jpg" alt="" class="img-fluid mb-4">
                 <div class="mt-5 mb-5 ps-3  description">
                     <h5 class="mb-2">Understanding community complexities</h5>
@@ -56,7 +56,9 @@ export default{
 <style lang="scss" scoped>
 @use '../styles/general.scss' as * ;
 @use '../styles/partials/variables' as * ;
-
+.box{
+    border: solid 1px black;
+}
 .bg{
     background-color: $color-view;
 }

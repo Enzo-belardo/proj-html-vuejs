@@ -3,8 +3,48 @@ export default{
   name: 'firsteArticleMain',
   components:{
 
+  },
+  data() {
+    return {
+      countVolunteers: 0,
+      countProjects: 0,
+      countDonated:0
+      
+    }
+  },
+    methods: {
+        timerVolunteers () {
+            if (this.countVolunteers < 2032) {
+                setTimeout(() => {
+                    this.countVolunteers += 1
+                    this.timerVolunteers()
+                }, 5)
+            }
+        },
+        timerProjects () {
+            if (this.countProjects < 132) {
+                setTimeout(() => {
+                    this.countProjects += 1
+                    this.timerProjects()
+                }, 50)
+            }
+        },
+          countDonateds () {
+             if (this.countDonated < 3) {
+                 setTimeout(() => {
+                     this.countDonated += 1
+                     this.countDonateds()
+                 }, 1500)
+             }
+         }
+    },
+    created () {
+        this.timerVolunteers()
+        this.timerProjects()
+        this.countDonateds()
+    }  
   }
-}
+
 </script>
 
 <template>
@@ -26,17 +66,17 @@ export default{
         <div class="col-lg-4 col-md-12 col-sm-12 bg-home d-flex flex-column align-items-center justify-content-center text-light">
             <div class="mb-3 text-center">
                 <i class="fa-regular fa-heart"></i>
-                <span>2032</span>
+                <span>{{ countVolunteers }}</span>
                 <p>Volunteers worldwide</p>
             </div>
             <div class="mb-3 text-center">
                 <i class="fa-sharp fa-solid fa-globe"></i>
-                <span>132</span>
+                <span>{{ countProjects }}</span>
                 <p>Active projects</p>
             </div>
             <div class="mb-3 text-center">
                 <i class="fa-sharp fa-solid fa-dollar-sign"></i>
-                <span>3.8M</span>
+                <span>{{ countDonated }},8</span>
                 <p>Donated</p>
             </div>      
         </div>

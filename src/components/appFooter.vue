@@ -31,7 +31,7 @@ export default{
 
         <div class="d-flex justify-content-end">
           <div class="pop d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>    
           </div>
         </div>
       </div>

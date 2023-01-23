@@ -19,7 +19,7 @@ export default{
             </div>
         </div>
         <div class="row  d-flex justify-content-center text-light  ">
-            <div class="col-lg-3 col-md-6 col-sm-10 text-center mb-5 ">
+            <div class="col-lg-3 col-md-6 col-sm-10 text-center mb-5">
                 <i class="fa-solid fa-droplet mb-1"></i>
                 <h5>Clean Water</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
